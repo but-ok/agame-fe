@@ -2,6 +2,7 @@
     include('../includes/config.php');
     include('../structure/database.php');
     include('../structure/user.php');
+	$websitename = "$_SERVER[HTTP_HOST]";
 
     $db = new database($db_host, $db_name, $db_user, $db_password);
     $user = new user($db);
@@ -25,7 +26,7 @@
             ';
         }else{
             $username = trim($_POST['username']);
-            $password = hash('sha256', md5(sha1(trim($_POST['password']))));
+            $password = hash(sha256, md5(sha1(trim($_POST['password']))));
 
             $user_data = $db->processQuery("SELECT `password`,`id`,`disabled` FROM `users` WHERE `username` = ? LIMIT 1", array($username), true);
 
@@ -42,7 +43,7 @@
                         if($_SERVER['REMOTE_ADDR'] == '127.0.0.1')
                             setcookie('session', $session, time()+250000, '/');
                         else
-                            setcookie('session', $session, time()+250000, '/', 'rscharts.com');
+                            setcookie('session', $session, time()+250000, '/', $websitename);
                     }else{
                         $title = 'Error';
                         $content = '<p>The given password is incorrect. <a href="login.php">Go Back</a></p>';

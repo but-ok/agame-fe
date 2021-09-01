@@ -128,10 +128,11 @@ class user {
     }
     
     public function hashandsalt($password){
-        $salt = substr(hash('sha256', sha1(time())), 10);
-        $password = $salt.hash('sha256', md5(sha1($password))).substr($salt, 0, -51);
+        $salt = substr(hash(sha256, sha1(time())), 10);
+        $pwstor = $salt.hash(sha256, md5(sha1($password))).substr($salt, 0, -51);
+		$passwordsalt = array($pwstor, $salt);
         
-        return $password;
+        return $passwordsalt;
     }
     
     public function generateSession($userid = null){
@@ -156,15 +157,16 @@ class user {
     }
     
     public function createUser($username, $password){
-        $password = $this->hashandsalt($password);
+        $pwsalt = $this->hashandsalt($password);
         $session = $this->generateSession();
         
-        $this->db->processQuery("INSERT INTO `users` VALUES (null, ?, ?, ?, 0, NOW(), ?, ?, 0, 0, 0, 0, 0, 0, 0, '', 0)", array(
+        $this->db->processQuery("INSERT INTO `users` VALUES (null, ?, ?, ?, 0, NOW(), ?, ?, 0, 0, 0, 0, 0, 0, 0, '', 0, ?)", array(
             $username,
-            $password,
+            $pwsalt[0],
             $session,
             '',
-            $_SERVER['REMOTE_ADDR']
+            $_SERVER['REMOTE_ADDR'],
+			$pwsalt[1]
         ));
         
         //log them in

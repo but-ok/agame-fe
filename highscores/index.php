@@ -404,20 +404,6 @@
                 }
             ?>
             
-            <div class="leftbox" style="text-align:center;">
-                <p class="title">AD</p>
-                <p>
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- Side ad -->
-                    <ins class="adsbygoogle"
-                        style="display:inline-block;width:120px;height:600px"
-                        data-ad-client="ca-pub-6464976486754613"
-                        data-ad-slot="1703589603"></ins>
-                    <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </p>
-            </div>
         </div>
         <div id="highscores" class="dark">
             <table id="highscores_table" cellpadding="10" cellspacing="0">

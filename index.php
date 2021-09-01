@@ -26,7 +26,6 @@
                         <a href="account/login.php" style="color:orangered;">LOGIN</a>
                         <br/><br/>
                     </span>
-                    <a href="forum/index.php" target="_blank" style="color:orangered;">FORUM</a>
                     <br/><br/>
                     <a href="highscores/index.php" style="color:green;" target="_blank">HIGHSCORES</a>
                     <br/><br/>
@@ -35,29 +34,20 @@
                     <a href="#" style="color:green;" id="faq">F.A.Q.</a>
                     <br/><br/>
                     <a href="#" style="color:green;" id="ore_prices">ORE PRICES</a>
+		    <br/><br/>
+		    <a href="https://discord.gg/YRWkPye" style="color:green;">JOIN THE OFFICIAL DISCORD!</a>
+
+
+
+
+
                     <!--
                     <hr>
                     Players online: <span name="player_count">0</span>
                     <br/>
                     <font size="1">updates every 5 minutes</font>
                     -->
-                    <div id="donation_goal" style="margin:15px 0px;">
-                        <img src="game/img/icons/loading2.gif">
-                    </div>
-                    <a href="donate/index.php"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" /></a>
-                    <br/>
-
-                    <font size="1">keeps this game alive (covers hosting cost)</font>
-                    <hr>
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- Game ad -->
-                    <ins class="adsbygoogle"
-                        style="display:inline-block;width:250px;height:250px"
-                        data-ad-client="ca-pub-6464976486754613"
-                        data-ad-slot="7970449202"></ins>
-                    <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
+                    
                 </p>
             </div>
             <div id="gamecontainer">
