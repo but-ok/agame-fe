@@ -5,7 +5,7 @@
 
     $db = new database($db_host, $db_name, $db_user, $db_password);
     $user = new user($db);
-    $user->createUser($username,$password);
+    $user->createUser($_POST['username'],$_POST['password']);
     $json['result'] = 'Congratulations! Your account has successfully been created.';
     $json['success'] = true;
 
