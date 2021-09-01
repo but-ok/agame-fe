@@ -42,7 +42,7 @@ class database
     
     public function processQuery($query, array $binds, $fetch = false) {
         echo '<b>try to proces query</b>';
-        echo $query;
+        echo var_dump($query);
         $query_handle = $this->dbc->prepare($query);
         
         if(!$query_handle->execute($binds)){

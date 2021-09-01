@@ -5,10 +5,8 @@
 
     $db = new database($db_host, $db_name, $db_user, $db_password);
     $user = new user($db);
-    echo '<b>ajax register attempted</b>';
-    echo $db;
-    echo $user;
-    echo $array($_SERVER['REMOTE_ADDR']);
+    echo json_encode(var_dump($db), var_dump($user), var_dump($_SERVER['REMOTE_ADDR']));
+
     
     if(isset($_POST['username']) && isset($_POST['password']) && isset($_POST['password2'])){    
         $username = trim($_POST['username'], ' ');
