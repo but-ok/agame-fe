@@ -14,10 +14,11 @@ class database
     private $insertId;
     
     function __construct($db_host, $db_name, $db_user, $db_password) {
+        echo '<b>trying to constructio</b>';
         try{
             $this->dbc = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user, $db_password);
-        }catch(PDOException $e){
-            echo '<b>An error occured while trying to create a database connection: </b>'. $e->getMessage();
+        }catch(PDOException $e){ 
+           echo '<b>An error occured while trying to create a database connection: </b>'. $e->getMessage();
         }
     }
     
@@ -40,6 +41,8 @@ class database
      */
     
     public function processQuery($query, array $binds, $fetch = false) {
+        echo '<b>try to proces query</b>';
+        echo $query;
         $query_handle = $this->dbc->prepare($query);
         
         if(!$query_handle->execute($binds)){
