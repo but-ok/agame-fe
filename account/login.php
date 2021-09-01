@@ -2,7 +2,6 @@
     include('../includes/config.php');
     include('../structure/database.php');
     include('../structure/user.php');
-	$websitename = "$_SERVER[HTTP_HOST]";
 
     $db = new database($db_host, $db_name, $db_user, $db_password);
     $user = new user($db);
@@ -43,7 +42,7 @@
                         if($_SERVER['REMOTE_ADDR'] == '127.0.0.1')
                             setcookie('session', $session, time()+250000, '/');
                         else
-                            setcookie('session', $session, time()+250000, '/', $websitename);
+                            setcookie('session', $session, time()+250000, '/', 'agame-fe.herokuapp.com');
                     }else{
                         $title = 'Error';
                         $content = '<p>The given password is incorrect. <a href="login.php">Go Back</a></p>';

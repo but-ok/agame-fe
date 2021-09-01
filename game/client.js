@@ -29,7 +29,6 @@ $(document).ready(function(){
             var session = getCookie('session');
             console.log('Attempting to login with '+ session);
             client.emit('login', session);
-            console.log('doing something not very good');
         });
         client.on('loginAttemptResult', function(data){
             if(data.success){
