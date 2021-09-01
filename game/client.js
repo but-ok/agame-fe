@@ -21,7 +21,7 @@ $(document).ready(function(){
     
         //connect to server
         //var client = io.connect('http://192.99.44.187:466');
-        var client = io.connect('https://agame-be.herokuapp.com');
+        var client = io.connect('localhost:' + process.env.PORT);
         
         client.on('connect', function(){
             $('#loading_screen span[name="connecting"]').text('Connected, logging in ...');

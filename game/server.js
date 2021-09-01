@@ -15,15 +15,16 @@ var servVars = {
 
 var mysql = require('mysql');
 var mysql_pool = mysql.createPool({
-    host : '184.168.98.214',
-    user : 'biggamer',
-    password : 'Halo23!',
+    host : '35.189.59.227',
+    user : 'root',
+    password : '',
     database : 'agame'
 });
 
 //start server
 var server = require('socket.io');
-server = module_wildcard(server).listen(466);
+console.log(process.env.PORT);
+server = module_wildcard(server).listen(process.env.PORT);
 console.log("server started");
 
 server.set('log level', 1);
