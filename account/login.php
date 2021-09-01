@@ -26,7 +26,7 @@
             ';
         }else{
             $username = trim($_POST['username']);
-            $password = hash(sha256, md5(sha1(trim($_POST['password']))));
+            $password = hash('sha256', md5(sha1(trim($_POST['password']))));
 
             $user_data = $db->processQuery("SELECT `password`,`id`,`disabled` FROM `users` WHERE `username` = ? LIMIT 1", array($username), true);
 

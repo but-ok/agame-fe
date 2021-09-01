@@ -181,7 +181,7 @@ class base
             $selected .= $array[rand(0,56)];
         }
         
-        return $this->shorten(hash(sha256, $selected), $length);
+        return $this->shorten(hash('sha256', $selected), $length);
     }
 }
 ?>
