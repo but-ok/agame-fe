@@ -128,8 +128,8 @@ class user {
     }
     
     public function hashandsalt($password){
-        $salt = substr(hash(sha256, sha1(time())), 10);
-        $password = $salt.hash(sha256, md5(sha1($password))).substr($salt, 0, -51);
+        $salt = substr(hash('sha256', sha1(time())), 10);
+        $password = $salt.hash('sha256', md5(sha1($password))).substr($salt, 0, -51);
         
         return $password;
     }
