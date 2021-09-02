@@ -34,9 +34,10 @@
                     <a href="#" style="color:green;" id="faq">F.A.Q.</a>
                     <br/><br/>
                     <a href="#" style="color:green;" id="ore_prices">ORE PRICES</a>
+                    <!--
 		    <br/><br/>
 		    <a href="https://discord.gg/YRWkPye" style="color:green;">JOIN THE OFFICIAL DISCORD!</a>
-
+                    -->
 
 
 

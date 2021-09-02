@@ -8,7 +8,7 @@
     $base = new base();
     $user = new user($db);
     
-    if($user->rights($user->id) > 0) $base->redirect('index.php');
+    //if($user->rights($user->id) > 0) $base->redirect('index.php');
     
     
     //players to show per page
