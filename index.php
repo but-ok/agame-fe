@@ -391,8 +391,8 @@
             <img src="game/img/icons/loading.gif" width="185" height="185" />
             <br/>
             
-            <font size="1"><span name="connecting">Connecting to game server ...</span></font>
-            <font size="1"><span name="resources" class="hidden">Please wait while the game resources are loaded.</span></font>
+            <font size="2"><span name="connecting">Connecting to game server ...</span></font>
+            <font size="2"><span name="resources" class="hidden">Please wait while the game resources are loaded.</span></font>
         </div>
     </body>
     <script>
