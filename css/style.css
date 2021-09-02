@@ -16,12 +16,6 @@ h2 {
 }
 
 #loading_screen {
-    position:fixed;
-    top:        0; 
-    left:       0; 
-    z-index:200;
-    min-width:100%;
-    min-height:100%;
     background-color:white;
     text-align:center;
     vertical-align: middle;
