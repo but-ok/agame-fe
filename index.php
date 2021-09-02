@@ -55,15 +55,15 @@
                 <div id="quickdetails" class="textleft center">
                     <table cellspacing="6">
                         <tr>
-                            <td><img src="game/img/icons/moneyBag.png" width="20" height="32"></td><td id="money_display"></td>
+                            <td><img src="game/img/icons/moneyBag.png" width="30" height="32"></td><td id="money_display"></td>
                             <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                            <td><img src="game/img/icons/bossCurrency.png" width="20" height="32"></td><td id="bc_display" class="displaytext">0</td>
+                            <td><img src="game/img/icons/bossCurrency.png" width="27" height="32"></td><td id="bc_display" class="displaytext">0</td>
                             <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                            <td><img src="game/img/icons/vault.png" width="20" height="32"></td><td id="vault_display" class="displaytext"></td>
+                            <td><img src="game/img/icons/vault.png" width="30" height="32"></td><td id="vault_display" class="displaytext"></td>
                             <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                            <td id="zombie_icon"><img src="game/img/npc/zombie.png" width="32" height="32"></td><td id="zombie_display" class="displaytext"></td>
-                            <td id="chikolio_icon" class="hidden"><img src="game/img/npc/chicken.png" width="32" height="32"></td><td id="chikolio_display" class="hidden displaytext"></td>
-                            <td id="underlord_icon" class="hidden"><img src="game/img/icons/zombiepigman.png" width="32" height="32"></td><td id="underlord_display" class="hidden displaytext"></td>
+                            <td id="zombie_icon"><img src="game/img/npc/zombie.png" width="30" height="32"></td><td id="zombie_display" class="displaytext"></td>
+                            <td id="chikolio_icon" class="hidden"><img src="game/img/npc/chicken.png" width="30" height="32"></td><td id="chikolio_display" class="hidden displaytext"></td>
+                            <td id="underlord_icon" class="hidden"><img src="game/img/icons/zombiepigman.png" width="30" height="32"></td><td id="underlord_display" class="hidden displaytext"></td>
 
                             <td id="enderboss_icon" class="hidden">
                                 <img src="game/img/npc/enderman_face.png" width="32" height="32">
@@ -72,7 +72,7 @@
                             <td id="enderboss_health" class="hidden"></td>
 
                             <td name="boss_separation">&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                            <td><img src="game/img/icons/portalparts_lit.png" width="32" height="32"></td><td id="portalparts_display" class="displaytext"></td><td></td>
+                            <td><img src="game/img/icons/portalparts_lit.png" width="28" height="32"></td><td id="portalparts_display" class="displaytext"></td><td></td>
                             <td class="hidden">&nbsp;&nbsp;&nbsp;&nbsp;</td>
                             <td name="globalBoss" class="globalbossevent">
                                 <img src="game/img/icons/globalBoss.png" style="float:left;margin-right:3px;" />
