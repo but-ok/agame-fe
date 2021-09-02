@@ -19,9 +19,9 @@ h2 {
     position:fixed;
     top:        0; 
     left:       0; 
-    z-index:100;
+    z-index:200;
     min-width:100%;
-    min-height:100%;
+    min-height:50%;
     background-color:white;
     text-align:center;
 }
