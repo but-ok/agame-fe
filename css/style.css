@@ -23,8 +23,7 @@ h2 {
     min-width:100%;
     min-height:100%;
     background-color:white;
-    display: flex;
-    align-items: center;
+    text-align:center;
 }
 
 #updatebar {
