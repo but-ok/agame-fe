@@ -73,6 +73,7 @@ server.sockets.on('connection', function(client){
     
     client.on('login', function(session){
         player.login(session);
+        console.log(session)
     });
     client.on('disconnect', function(){
         client.removeAllListeners();
