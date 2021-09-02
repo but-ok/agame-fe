@@ -386,9 +386,9 @@
         </div>
 
         <div id="loading_screen">
-            <h2>A G A M E . . .</h2>
+            <h2>A G A M E</h2>
             <br/>
-            <img src="game/img/icons/loading.gif" width="50" height="50" />
+            <img src="game/img/icons/loading.gif" width="185" height="185" />
             <br/>
             
             <font size="1"><span name="connecting">Connecting to game server ...</span></font>
